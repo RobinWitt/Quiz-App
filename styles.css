@@ -31,6 +31,7 @@ h2 {
   padding-top: 5px;
   padding-left: 5px;
   color: #003366;
+  text-align: center;
 }
 
 section {
@@ -40,6 +41,8 @@ section {
   margin: 10px;
   width: 300px;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
 .bookmarkSymbol {
@@ -52,11 +55,19 @@ section {
   top: -7px;
 }
 
+.categorySec {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  width: 300px;
+  gap: 3px;
+}
+
 .categoryTag {
   border: 2px solid grey;
   border-radius: 5px;
   width: fit-content;
-  margin: 10px;
   padding: 2px 5px;
   color: grey;
   font-family: "Times New Roman", Times, serif;
@@ -65,6 +76,7 @@ section {
 
 legend {
   margin: 10px;
+  text-align: center;
 }
 
 ul {
@@ -82,6 +94,30 @@ ul > li {
   border-radius: 5px;
   border: 2px solid grey;
   font-weight: 500;
+  width: fit-content;
+  align-self: center;
+}
+
+img {
+  margin: 10px 0;
+  width: 90%;
+  align-self: center;
+}
+
+.about-me {
+  text-align: center;
+  text-decoration: underline 2px solid black;
+  margin: 5px 0;
+}
+
+.about-me-text {
+  text-align: center;
+  font-size: 18px;
+  margin: 10px;
+}
+
+.settings > p {
+  padding: 5px;
 }
 
 .endSection {
@@ -111,6 +147,14 @@ nav > a {
   padding: 5px;
   text-decoration: none;
   color: #003366;
-  background-color: #80bfff;
+  background-color: #e0e0e0;
   border-radius: 2px;
+}
+
+nav > a:hover {
+  border: 2px solid grey;
+}
+
+.navbarActive {
+  background-color: #80bfff;
 }
