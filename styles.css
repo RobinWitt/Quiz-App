@@ -39,20 +39,24 @@ section {
   background-color: whitesmoke;
   color: black;
   margin: 10px;
-  width: 300px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
+  width: 500px;
 }
 
 .bookmarkSymbol {
-  background-color: red;
-  border: 1px solid black;
-  width: 10px;
-  height: 20px;
   position: absolute;
-  right: 20px;
-  top: -7px;
+  right: 5px;
+  top: 5px;
+  border: none;
+  color: #003366;
+  background-color: whitesmoke;
+}
+
+.bookmarkSymbol:hover {
+  border: 1px solid grey;
+  border-radius: 5px;
 }
 
 .categorySec {
@@ -128,9 +132,8 @@ img {
 footer {
   position: fixed;
   bottom: 0;
-  background-color: whitesmoke;
-  width: 100%;
-  height: 40px;
+  width: fit-content;
+  height: 50px;
   padding: 5px;
   display: flex;
   justify-content: center;
@@ -138,20 +141,22 @@ footer {
 }
 
 nav {
-  /*border: 2px solid black;*/
+  background-color: whitesmoke;
+  height: 58px;
+  width: fit-content;
   padding: 5px;
+  display: flex;
+  gap: 10px;
 }
 
-nav > a {
-  /*border: 2px solid black;*/
-  padding: 5px;
-  text-decoration: none;
+nav > a > svg {
   color: #003366;
   background-color: #e0e0e0;
-  border-radius: 2px;
+  width: 48px;
+  height: 48px;
 }
 
-nav > a:hover {
+nav > a > svg:hover {
   border: 2px solid grey;
 }
 
