@@ -4,9 +4,17 @@
   padding: 0;
 }
 
+:root {
+  --color-primary: #003366;
+  --color-secondary: black;
+  --color-background: white;
+  --color-section: whitesmoke;
+  --color-navbar: #80bfff;
+}
+
 body {
-  background-color: white;
-  color: #003366;
+  background-color: var(--color-background);
+  color: var(--color-primary);
   font-family: "Lucida Sans", sans-serif;
   font-size: 20px;
   display: flex;
@@ -28,22 +36,27 @@ main {
 }
 
 h1 {
-  border: 5px solid #003366;
+  border: 5px solid var(--color-primary);
   border-radius: 4px;
   width: fit-content;
   padding: 15px 10px 10px 10px;
 }
 
 h2 {
-  padding-top: 10px;
-  color: #003366;
+  padding: 10px 0;
+  color: var(--color-primary);
   text-align: center;
+}
+
+h3 {
+  text-align: center;
+  margin: 5px 0;
 }
 
 section {
   position: relative;
-  background-color: whitesmoke;
-  color: black;
+  background-color: var(--color-section);
+  color: var(--color-secondary);
   margin: 15px;
   border-radius: 5px;
   display: flex;
@@ -58,13 +71,17 @@ section {
   right: 5px;
   top: 5px;
   border: none;
-  color: #003366;
-  background-color: whitesmoke;
+  color: var(--color-primary);
+  background-color: var(--color-section);
 }
 
 .bookmarkSymbol:hover {
   border: 1px solid grey;
   border-radius: 5px;
+}
+
+.bookmarksvg {
+  width: 30px;
 }
 
 .categorySec {
@@ -119,25 +136,24 @@ img {
   align-self: center;
 }
 
-.about-me {
-  text-align: center;
-  text-decoration: underline 2px solid black;
-  margin: 5px 0;
-}
-
 .about-me-text {
   text-align: center;
   font-size: 18px;
   margin: 10px;
 }
 
+.settings {
+  display: flex;
+  align-items: center;
+}
+
 .settings > p {
-  padding: 5px;
+  padding-top: 10px;
 }
 
 .endSection {
   height: 40px;
-  background-color: white;
+  background-color: var(--color-background);
   box-shadow: none;
 }
 
@@ -153,7 +169,6 @@ footer {
 }
 
 nav {
-  background-color: whitesmoke;
   height: 58px;
   width: 500px;
   padding: 5px;
@@ -164,8 +179,8 @@ nav {
 }
 
 nav > a > svg {
-  color: #003366;
-  background-color: #e0e0e0;
+  color: var(--color-primary);
+  background-color: var(--color-section);
   width: 48px;
   height: 48px;
 }
@@ -175,5 +190,5 @@ nav > a > svg:hover {
 }
 
 .navbarActive {
-  background-color: #80bfff;
+  background-color: var(--color-navbar);
 }
