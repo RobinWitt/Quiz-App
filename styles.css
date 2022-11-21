@@ -38,11 +38,12 @@ section {
   position: relative;
   background-color: whitesmoke;
   color: black;
-  margin: 10px;
+  margin: 20px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   width: 500px;
+  box-shadow: 5px 5px 5px 2px grey;
 }
 
 .bookmarkSymbol {
@@ -66,6 +67,7 @@ section {
   align-self: center;
   width: 300px;
   gap: 3px;
+  box-shadow: none;
 }
 
 .categoryTag {
@@ -127,12 +129,13 @@ img {
 .endSection {
   height: 40px;
   background-color: white;
+  box-shadow: none;
 }
 
 footer {
   position: fixed;
   bottom: 0;
-  width: fit-content;
+  width: 100%;
   height: 50px;
   padding: 5px;
   display: flex;
@@ -143,10 +146,12 @@ footer {
 nav {
   background-color: whitesmoke;
   height: 58px;
-  width: fit-content;
+  width: 100%;
   padding: 5px;
+  margin-bottom: 5px;
   display: flex;
-  gap: 10px;
+  justify-content: space-evenly;
+  gap: 5px;
 }
 
 nav > a > svg {
