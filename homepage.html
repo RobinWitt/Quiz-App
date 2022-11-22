@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class=":root">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App - Home</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <script src="myscript.js" defer></script>
   </head>
   <body>
@@ -13,14 +13,14 @@
       <h1>Quiz App</h1>
     </header>
     <main>
-      <section>
+      <section class="question-card">
         <h2>Question 1</h2>
         <button
-          class="bookmarkSymbol"
+          class="bookmark"
           data-js="bookmarkButton"
           aria-label="click to bookmark"
         >
-          <svg class="bookmarksvg" viewBox="0 0 24 24">
+          <svg class="bookmark__svg" viewBox="0 0 24 24">
             <path
               data-js="svgPath"
               fill="currentColor"
@@ -28,18 +28,20 @@
             />
           </svg>
         </button>
-        <section class="categorySec">
-          <p class="categoryTag">web</p>
-          <p class="categoryTag">html</p>
-        </section>
-        <h3 class="answerChecks">What does html stand for?</h3>
-        <button class="showAnswers">Show Answer</button>
-        <p class="answer">html stands for Hyper Text Markup Language</p>
+        <ul class="question-card__categories">
+          <li class="question-card__categories-tags">web</li>
+          <li class="question-card__categories-tags">html</li>
+        </ul>
+        <h3>What does html stand for?</h3>
+        <button class="question-card__button-show-answer">Show Answer</button>
+        <p class="question-card__answer">
+          html stands for Hyper Text Markup Language
+        </p>
       </section>
-      <section>
+      <section class="question-card">
         <h2>Question 2</h2>
-        <button class="bookmarkSymbol active" aria-label="click to unbookmark">
-          <svg class="bookmarksvg" viewBox="0 0 24 24">
+        <button class="bookmark active" aria-label="click to unbookmark">
+          <svg class="bookmark__svg" viewBox="0 0 24 24">
             <path
               data-js="svgPath"
               fill="currentColor"
@@ -47,87 +49,25 @@
             />
           </svg>
         </button>
-        <section class="categorySec">
-          <p class="categoryTag">categories</p>
-          <p class="categoryTag">html</p>
-          <p class="categoryTag">css</p>
-        </section>
-        <h3 class="answerChecks">Add question text here?</h3>
-        <button class="showAnswers">Show Answers</button>
-      </section>
-      <section>
-        <h2>Question 3</h2>
-        <button class="bookmarkSymbol" aria-label="click to bookmark">
-          <svg class="bookmarksvg" viewBox="0 0 24 24">
-            <path
-              fill="currentColor"
-              d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
-            />
-          </svg>
-        </button>
-        <section class="categorySec">
-          <p class="categoryTag">categories</p>
-          <p class="categoryTag">html</p>
-          <p class="categoryTag">css</p>
-        </section>
-        <h3 class="answerChecks">Add question text here?</h3>
-        <button class="showAnswers">Show Answers</button>
-      </section>
-      <section>
-        <h2>Question 4</h2>
-        <button class="bookmarkSymbol" aria-label="click to bookmark">
-          <svg class="bookmarksvg" viewBox="0 0 24 24">
-            <path
-              fill="currentColor"
-              d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
-            />
-          </svg>
-        </button>
-        <section class="categorySec">
-          <p class="categoryTag">categories</p>
-          <p class="categoryTag">html</p>
-          <p class="categoryTag">css</p>
-        </section>
-        <h3 class="answerChecks">Add question text here?</h3>
-        <button class="showAnswers">Show Answers</button>
-      </section>
-      <section>
-        <h2>Question 5</h2>
-        <button class="bookmarkSymbol" aria-label="click to bookmark">
-          <svg class="bookmarksvg" viewBox="0 0 24 24">
-            <path
-              fill="currentColor"
-              d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
-            />
-          </svg>
-        </button>
-        <section class="categorySec">
-          <p class="categoryTag">categories</p>
-          <p class="categoryTag">html</p>
-          <p class="categoryTag">css</p>
-        </section>
-        <h3 class="answerChecks">Add question text here?</h3>
-        <button class="showAnswers">Show Answers</button>
+        <ul class="question-card__categories">
+          <li class="question-card__categories-tags">web</li>
+          <li class="question-card__categories-tags">css</li>
+        </ul>
+        <h3>What does css stand for</h3>
+        <button class="question-card__button-show-answer">Show Answer</button>
+        <p class="question-card__answer">css means Cascading Style Sheets</p>
       </section>
 
       <!--
         * Question Section with multiple choice answer options *
-        <section>
-        <h2>Question</h2>
-        <div class="bookmarkSymbol"></div>
-        <p class="categoryTag">categories</p>
-        <legend class="answerChecks">Add question text here?
+        
         <ul>
         <li><input class="answerOption" type="checkbox" value="0"> Answer 1</input></li>
         <li><input class="answerOption" type="checkbox" value="1"> Answer 2</input></li>
         <li><input class="answerOption" type="checkbox" value="2"> Answer 3</input></li>
       </ul>
-    </legend>
-        <button class="showAnswers">Show Answers</button>
-      </section>
-    <section class="endSection">
-    </section>
-  -->
+        <button class="showAnswer">Show Answer</button>
+      </section> -->
     </main>
     <footer>
       <nav class="navbar">

@@ -1,0 +1,53 @@
+/*
+block selector - in case of need
+.question-card {}
+*/
+
+.question-card__categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  gap: 3px;
+  list-style: none;
+  /*width: 300px;*/
+}
+
+.question-card__categories-tags {
+  border: 2px solid grey;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 2px 5px;
+  color: grey;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+}
+
+/*  for multiple choice question box
+  ul {
+    margin: 10px;
+    list-style: none;
+  }
+  
+  ul > li {
+    margin: 5px;
+  }
+  */
+
+.question-card__button-show-answer {
+  margin: 10px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+  font-weight: 500;
+  width: fit-content;
+  align-self: center;
+}
+
+.question-card__answer {
+  padding: 10px;
+  font-style: italic;
+  font-size: 16px;
+  text-align: center;
+}
