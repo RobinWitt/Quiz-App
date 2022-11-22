@@ -8,12 +8,8 @@
   background-color: transparent;
 }
 
-.bookmark:checked {
-  color: none;
-}
-
 .bookmark:hover {
-  border: 1px solid grey;
+  border: 1px solid var(--color-accent);
   border-radius: 5px;
 }
 
