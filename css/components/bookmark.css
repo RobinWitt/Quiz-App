@@ -1,0 +1,23 @@
+/* Bookmark icon on question card */
+
+.bookmark {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  border: none;
+  background-color: transparent;
+}
+
+.bookmark:checked {
+  color: none;
+}
+
+.bookmark:hover {
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.bookmark__svg {
+  width: 30px;
+  color: var(--color-accent);
+}

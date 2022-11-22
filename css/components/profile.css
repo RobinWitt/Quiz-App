@@ -1,0 +1,22 @@
+.profile__img {
+  margin: 10px 0;
+  width: 90%;
+  align-self: center;
+}
+
+.profile__about-me-text {
+  text-align: center;
+  font-size: 18px;
+  margin: 10px;
+}
+
+.profile__settings > p {
+  padding: 10px 0px;
+}
+
+.profile__logout {
+  padding: 10px 0;
+  color: var(--color-accent);
+  text-align: center;
+  text-decoration: underline solid 2px var(--color-accent);
+}

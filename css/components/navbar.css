@@ -1,0 +1,40 @@
+/* Footer with navigation bar */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  height: fit-content;
+  width: 500px;
+  /*padding: 5px;
+    /*margin-bottom: 5px;*/
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+  background-color: var(--color-section);
+  box-shadow: var(--navbar-shadow);
+  border-top: var(--navbar-border);
+}
+
+nav > a > svg {
+  color: var(--color-primary);
+  background-color: var(--color-section);
+  width: 50px;
+  height: 50px;
+}
+
+nav > a > svg:hover {
+  border: 2px solid grey;
+}
+
+.navbarActive {
+  background-color: var(--color-navbar);
+}
