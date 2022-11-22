@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App - Home</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="myscript.js"></script>
+    <script src="myscript.js" defer></script>
   </head>
   <body>
     <header>
@@ -14,8 +14,12 @@
     </header>
     <main>
       <section>
-        <h2>Question</h2>
-        <button class="bookmarkSymbol" aria-label="click to bookmark">
+        <h2>Question 1</h2>
+        <button
+          class="bookmarkSymbol"
+          data-js="bookmarkButton"
+          aria-label="click to bookmark"
+        >
           <svg class="bookmarksvg" viewBox="0 0 24 24">
             <path
               fill="currentColor"
@@ -24,15 +28,15 @@
           </svg>
         </button>
         <section class="categorySec">
-          <p class="categoryTag">categories</p>
+          <p class="categoryTag">web</p>
           <p class="categoryTag">html</p>
-          <p class="categoryTag">css</p>
         </section>
-        <legend class="answerChecks">Add question text here?</legend>
-        <button class="showAnswers">Show Answers</button>
+        <h3 class="answerChecks">What does html stand for?</h3>
+        <button class="showAnswers">Show Answer</button>
+        <p class="answer">html stands for Hyper Text Markup Language</p>
       </section>
       <section>
-        <h2>Question</h2>
+        <h2>Question 2</h2>
         <button class="bookmarkSymbol active" aria-label="click to unbookmark">
           <svg class="bookmarksvg" viewBox="0 0 24 24">
             <path
@@ -46,11 +50,11 @@
           <p class="categoryTag">html</p>
           <p class="categoryTag">css</p>
         </section>
-        <legend class="answerChecks">Add question text here?</legend>
+        <h3 class="answerChecks">Add question text here?</h3>
         <button class="showAnswers">Show Answers</button>
       </section>
       <section>
-        <h2>Question</h2>
+        <h2>Question 3</h2>
         <button class="bookmarkSymbol" aria-label="click to bookmark">
           <svg class="bookmarksvg" viewBox="0 0 24 24">
             <path
@@ -64,11 +68,11 @@
           <p class="categoryTag">html</p>
           <p class="categoryTag">css</p>
         </section>
-        <legend class="answerChecks">Add question text here?</legend>
+        <h3 class="answerChecks">Add question text here?</h3>
         <button class="showAnswers">Show Answers</button>
       </section>
       <section>
-        <h2>Question</h2>
+        <h2>Question 4</h2>
         <button class="bookmarkSymbol" aria-label="click to bookmark">
           <svg class="bookmarksvg" viewBox="0 0 24 24">
             <path
@@ -82,11 +86,11 @@
           <p class="categoryTag">html</p>
           <p class="categoryTag">css</p>
         </section>
-        <legend class="answerChecks">Add question text here?</legend>
+        <h3 class="answerChecks">Add question text here?</h3>
         <button class="showAnswers">Show Answers</button>
       </section>
       <section>
-        <h2>Question</h2>
+        <h2>Question 5</h2>
         <button class="bookmarkSymbol" aria-label="click to bookmark">
           <svg class="bookmarksvg" viewBox="0 0 24 24">
             <path
@@ -100,7 +104,7 @@
           <p class="categoryTag">html</p>
           <p class="categoryTag">css</p>
         </section>
-        <legend class="answerChecks">Add question text here?</legend>
+        <h3 class="answerChecks">Add question text here?</h3>
         <button class="showAnswers">Show Answers</button>
       </section>
 
