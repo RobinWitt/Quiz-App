@@ -12,21 +12,21 @@
   --color-accent: #c71585;
   --color-background: white;
   --color-section: whitesmoke;
-  --color-navbar: #80bfff;
-  --section-shadow: 5px 5px 5px 2px grey;
+  --color-navbar-active: #80bfff;
+  --color-navbar-inactive: #e6f1f9d9;
+  --color-navbar-background: #80bfff;
   --navbar-shadow: 0px -5px 10px 0px;
-  --navbar-border: "";
 }
 
 :root.dark {
-  --color-primary: #b9d3ee;
+  --color-primary: #d2dfeb;
   --color-secondary: #9fb6cd;
-  --color-background: #2f4f4f;
-  --color-section: #0d0d0d;
-  --color-navbar: "";
-  --shadow: "";
-  --navbar-shadow: "";
-  --navbar-border: 2px solid whitesmoke;
+  --color-background: #202020;
+  --color-section: #404040;
+  --color-navbar-active: #4f4c4c;
+  --color-navbar-inactive: #807d7d;
+  --color-navbar-background: #4f4c4c;
+  --navbar-shadow: 0px -5px 10px 0px black;
 }
 
 body {
@@ -50,7 +50,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 60px;
+  padding-bottom: 70px;
 }
 
 h1 {
@@ -78,9 +78,9 @@ section {
   align-items: center;
   background-color: var(--color-section);
   color: var(--color-secondary);
-  margin: 15px;
+  margin: 5px;
   border-radius: 5px;
   width: 500px;
   max-width: 95%;
-  box-shadow: var(--section-shadow);
+  border: 1px solid var(--color-secondary);
 }
