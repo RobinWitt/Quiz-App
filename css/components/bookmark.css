@@ -17,3 +17,7 @@
   width: 30px;
   color: var(--color-accent);
 }
+
+.bookmark__svg.hidden {
+  display: none;
+}
