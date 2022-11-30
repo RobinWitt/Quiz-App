@@ -1,6 +1,6 @@
 /* toggle bookmark */
 
-let svgPath = document.querySelector('path[data-js="svgPath"]');
+let svgPath = document.querySelector('[data-js="svgPath"]');
 
 function toggleBookmark() {
   if (

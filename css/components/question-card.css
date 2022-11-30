@@ -1,7 +1,21 @@
-/*
-block selector - in case of need
-.question-card {}
-*/
+/* Question Cards */
+
+.question-card__main {
+}
+
+.question-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-section);
+  color: var(--color-secondary);
+  margin: 0.2em;
+  border-radius: 5px;
+  width: 95%;
+  border: 1px solid var(--color-secondary);
+  height: fit-content;
+}
 
 .question-card__categories {
   display: flex;
@@ -10,7 +24,6 @@ block selector - in case of need
   align-self: center;
   gap: 3px;
   list-style: none;
-  /*width: 300px;*/
 }
 
 .question-card__categories-tags {
@@ -35,19 +48,19 @@ block selector - in case of need
   */
 
 .question-card__button-show-answer {
-  margin: 10px;
-  padding: 2px 5px;
+  margin: 0.7rem;
+  padding: 0.25rem;
   border-radius: 5px;
-  border: 2px solid var(--color-accent);
-  color: var(--color-accent);
+  border: 2px solid var(--color-background);
+  color: var(--color-section);
+  background-color: var(--color-secondary);
   font-weight: 500;
-  width: fit-content;
   align-self: center;
 }
 
 .question-card__answer {
-  padding: 10px;
+  padding: 0.7rem;
   font-style: italic;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center;
 }

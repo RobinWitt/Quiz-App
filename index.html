@@ -14,13 +14,17 @@
     </header>
     <main>
       <section>
-        <form class="index__login-form">
-          <h3>Please Login to continue</h3>
-          <input type="text" placeholder="Enter Username" required />
-          <input type="password" placeholder="Enter Password" required />
-          <input type="submit" name="Submit" value="Login" />
-          <a href="#">Reset password</a>
-          <a href="#">Create new account</a>
+        <form data-js="login-form" class="login-form">
+          <fieldset>
+            <legend>Please Login to continue</legend>
+            <label for="login-username">Enter Username:</label>
+            <input id="login-username" type="text" required />
+            <label for="login-password">Enter Password</label>
+            <input id="login-password" type="password" required />
+            <button type="submit" name="login-button">Submit</button>
+            <a href="#">Reset password</a>
+            <a href="#">Create new account</a>
+          </fieldset>
         </form>
       </section>
     </main>

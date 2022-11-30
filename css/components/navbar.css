@@ -12,10 +12,9 @@ footer {
 }
 
 nav {
-  height: 60px;
-  width: fit-content;
-  /*padding: 5px;
-    /*margin-bottom: 5px;*/
+  height: 50px;
+  width: 100%;
+  max-width: 700px;
   display: flex;
   justify-content: space-evenly;
   background-color: var(--color-navbar-background);
@@ -23,20 +22,26 @@ nav {
   border-radius: 5px;
 }
 
-nav > a > svg {
+nav > a {
+  border: 2px solid var(--color-navbar-background);
   color: var(--color-primary);
   background-color: var(--color-navbar-inactive);
-  width: 50px;
-  height: 50px;
-  padding: 5px;
-  border: 2px solid var(--color-navbar-background);
-}
-
-nav > a > svg:hover {
-  border: 2px solid grey;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .navbar__active-page {
   background-color: var(--color-navbar-active);
   border: none;
+}
+
+nav > a > svg {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+}
+
+nav > a > svg:hover {
+  border: 2px solid transparent;
 }
