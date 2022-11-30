@@ -18,6 +18,30 @@
   --navbar-shadow: 0px -5px 10px 0px;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #d2dfeb;
+    --color-secondary: #9fb6cd;
+    --color-background: #202020;
+    --color-section: #404040;
+    --color-navbar-active: #4f4c4c;
+    --color-navbar-inactive: #807d7d;
+    --color-navbar-background: #4f4c4c;
+    --navbar-shadow: 0px -5px 10px 0px black;
+  }
+}
+
+@media (min-width: 700px) {
+  .question-card__main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.25em;
+  }
+  nav {
+    width: fit-content;
+  }
+}
+
 :root.dark {
   --color-primary: #d2dfeb;
   --color-secondary: #9fb6cd;
@@ -33,14 +57,14 @@ body {
   background-color: var(--color-background);
   color: var(--color-primary);
   font-family: "Lucida Sans", sans-serif;
-  font-size: 20px;
+  font-size: 1.2em;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 header {
-  margin: 5px;
+  margin: 0.25em;
   display: flex;
   justify-content: center;
 }
@@ -54,21 +78,21 @@ main {
 }
 
 h1 {
-  border: 5px solid var(--color-primary);
+  border: 0.1em solid var(--color-primary);
   border-radius: 5px;
   width: fit-content;
-  padding: 15px 10px 10px 10px;
+  padding: 0.2em;
 }
 
 h2 {
-  padding: 10px 0;
+  padding: 0.5em 0;
   color: var(--color-primary);
   text-align: center;
 }
 
 h3 {
   text-align: center;
-  margin: 5px 0;
+  margin: 0.25em 0;
 }
 
 section {
@@ -78,9 +102,10 @@ section {
   align-items: center;
   background-color: var(--color-section);
   color: var(--color-secondary);
-  margin: 5px;
+  margin: 0.2em;
   border-radius: 5px;
-  width: 500px;
-  max-width: 95%;
+  width: 90%;
+  height: fit-content;
   border: 1px solid var(--color-secondary);
+  box-shadow: 5px 5px 10px 1px black;
 }

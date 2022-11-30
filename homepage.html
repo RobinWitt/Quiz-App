@@ -12,8 +12,8 @@
     <header>
       <h1>Quiz App</h1>
     </header>
-    <main>
-      <section class="question-card">
+    <main class="question-card__main">
+      <article class="question-card">
         <h2>Question 1</h2>
         <button
           class="bookmark"
@@ -44,8 +44,8 @@
         <p class="question-card__answer">
           html stands for Hyper Text Markup Language
         </p>
-      </section>
-      <section class="question-card">
+      </article>
+      <article class="question-card">
         <h2>Question 2</h2>
         <button class="bookmark active" aria-label="click to unbookmark">
           <svg class="bookmark__svg" viewBox="0 0 24 24">
@@ -63,7 +63,7 @@
         <h3>What does css stand for</h3>
         <button class="question-card__button-show-answer">Show Answer</button>
         <p class="question-card__answer">css means Cascading Style Sheets</p>
-      </section>
+      </article>
 
       <!--
         * Question Section with multiple choice answer options *
@@ -78,8 +78,11 @@
     </main>
     <footer>
       <nav class="navbar">
-        <a class="home" aria-label="go to Homepage" href="homepage.html"
-          ><svg class="navbar__active-page" viewBox="0 0 24 24">
+        <a
+          class="home navbar__active-page"
+          aria-label="go to Homepage"
+          href="homepage.html"
+          ><svg viewBox="0 0 24 24">
             <path
               fill="currentColor"
               d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"
