@@ -1,24 +1,15 @@
-/* toggle bookmark */
+// toggle bookmarks
 
-const bookmarkIcon = document.querySelector('[data-js="bookmark__svg-path"]');
-const bookmarkIcon2 = document.querySelector('[data-js="bookmark__svg-path2"]');
+const bookmark = document.querySelectorAll('[data-js="bookmark__svg-path"]');
 
-function toggleBookmark() {
-  if (bookmarkIcon.getAttribute("fill") === "currentColor") {
-    bookmarkIcon.setAttribute("fill", "transparent");
-    console.log("unbookmarked");
-  } else {
-    console.log("bookmarked");
-    bookmarkIcon.setAttribute("fill", "currentColor");
-  }
-}
-
-function toggleBookmark2() {
-  if (bookmarkIcon2.getAttribute("fill") === "currentColor") {
-    bookmarkIcon2.setAttribute("fill", "transparent");
-    console.log("unbookmarked");
-  } else {
-    console.log("bookmarked");
-    bookmarkIcon2.setAttribute("fill", "currentColor");
-  }
-}
+document
+  .querySelectorAll('[data-js="toggle-bookmark"]')
+  .forEach((button, index) => {
+    button.onclick = (event) => {
+      if (bookmark.item(index).getAttribute("fill") === "currentColor") {
+        bookmark.item(index).setAttribute("fill", "transparent");
+      } else {
+        bookmark.item(index).setAttribute("fill", "currentColor");
+      }
+    };
+  });

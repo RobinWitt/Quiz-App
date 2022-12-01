@@ -1,4 +1,4 @@
-// show answers
+// toggle answers
 
 const showAnswer = document.querySelectorAll(
   '[data-js="question-card__answer"]'
