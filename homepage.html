@@ -20,17 +20,11 @@
           aria-label="click to bookmark"
           onclick="toggleBookmark()"
         >
-          <svg class="bookmark__svg" data-js="svg" viewBox="0 0 24 24">
+          <svg class="bookmark__svg" viewBox="0 0 24 24">
             <path
-              data-js="svgPath"
-              fill="currentColor"
-              d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
-            />
-          </svg>
-          <svg class="bookmark__svg hidden" data-js="svg" viewBox="0 0 24 24">
-            <path
-              data-js="svgPath"
-              fill="currentColor"
+              data-js="bookmark__svg-path"
+              fill="transparent"
+              stroke="var(--color-accent"
               d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
             />
           </svg>
@@ -47,11 +41,16 @@
       </article>
       <article class="question-card">
         <h2>Question 2</h2>
-        <button class="bookmark active" aria-label="click to unbookmark">
+        <button
+          class="bookmark active"
+          aria-label="click to unbookmark"
+          onclick="toggleBookmark2()"
+        >
           <svg class="bookmark__svg" viewBox="0 0 24 24">
             <path
-              data-js="svgPath"
-              fill="currentColor"
+              data-js="bookmark__svg-path2"
+              fill="transparent"
+              stroke="var(--color-accent"
               d="M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
             />
           </svg>

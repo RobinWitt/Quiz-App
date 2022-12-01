@@ -2,21 +2,13 @@
 
 .bookmark {
   position: absolute;
-  right: 7px;
-  top: 7px;
+  right: 10px;
+  top: 10px;
   border: none;
   background-color: transparent;
 }
 
-.bookmark:hover {
-  border: 2px solid transparent;
-}
-
 .bookmark__svg {
-  width: 30px;
+  width: 1.8rem;
   color: var(--color-accent);
-}
-
-.bookmark__svg.hidden {
-  display: none;
 }
