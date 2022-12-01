@@ -21,7 +21,8 @@
 
 .question-card__header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 0.7rem;
   width: 100%;
 }
 

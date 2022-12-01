@@ -7,6 +7,7 @@
     <title>Quiz App - Home</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <script src="./jscript/bookmarking.js" defer></script>
+    <script src="./jscript/answerToggle.js" defer></script>
   </head>
   <body>
     <header>
@@ -37,8 +38,17 @@
           </button>
         </nav>
         <h3>What does html stand for?</h3>
-        <button class="question-card__button-show-answer">Show Answer</button>
-        <p class="question-card__answer">
+        <button
+          class="question-card__button-show-answer"
+          data-js="question-card__button-show-answer"
+        >
+          Show Answer
+        </button>
+        <p
+          class="question-card__answer"
+          data-js="question-card__answer"
+          style="display: none"
+        >
           html stands for Hyper Text Markup Language
         </p>
       </article>
@@ -66,8 +76,19 @@
           </button>
         </nav>
         <h3>What does css stand for?</h3>
-        <button class="question-card__button-show-answer">Show Answer</button>
-        <p class="question-card__answer">css means Cascading Style Sheets</p>
+        <button
+          class="question-card__button-show-answer"
+          data-js="question-card__button-show-answer"
+        >
+          Show Answer
+        </button>
+        <p
+          class="question-card__answer"
+          data-js="question-card__answer"
+          style="display: none"
+        >
+          css means Cascading Style Sheets
+        </p>
       </article>
 
       <!--

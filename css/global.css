@@ -21,8 +21,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-primary: #d2dfeb;
-    --color-secondary: #9fb6cd;
+    --color-primary: #90a5b9;
+    --color-secondary: #b5a9d5;
     --color-background: #202020;
     --color-section: #404040;
     --color-navbar-active: #4f4c4c;
@@ -60,7 +60,7 @@
 body {
   background-color: var(--color-background);
   color: var(--color-primary);
-  font-family: "Lucida Sans", sans-serif;
+  font-family: Alata, Calibri, sans-serif;
   font-size: 1.2em;
 }
 
@@ -76,7 +76,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 0.2rem;
+  padding-bottom: 0.5rem;
   background-color: var(--color-navbar-background);
   box-shadow: var(--header-shadow);
 }
