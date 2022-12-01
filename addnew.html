@@ -14,7 +14,26 @@
     </header>
     <main>
       <section>
-        <h2>Bookmarks</h2>
+        <h2 id="new-card__header">Create a new Card</h2>
+        <form
+          aria-labelledby="new-card__header+"
+          data-js="new-card__form"
+          class="new-card__form"
+        >
+          <p id="new-card__description">Create a new question card</p>
+          <label for="new-card__question">Enter Question:</label>
+          <input id="new-card__question" type="text" required />
+          <label for="new-card__answer">Enter Password:</label>
+          <input id="new-card__answer" type="text" required />
+          <button
+            data-js="new-card__button"
+            type="submit"
+            name="new-card__button"
+            class="new-card__button"
+          >
+            Submit
+          </button>
+        </form>
       </section>
     </main>
 
@@ -30,7 +49,7 @@
           </svg>
         </a>
         <a
-          class="add"
+          class="add active-page"
           aria-label="create a new question card"
           href="addnew.html"
           ><svg viewBox="0 0 24 24">
@@ -40,10 +59,7 @@
             />
           </svg>
         </a>
-        <a
-          class="bookmarks active-page"
-          aria-label="go to Bookmarks"
-          href="bookmarks.html"
+        <a class="bookmarks" aria-label="go to Bookmarks" href="bookmarks.html"
           ><svg viewBox="0 0 24 24">
             <path
               fill="currentColor"

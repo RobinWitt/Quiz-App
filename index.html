@@ -14,22 +14,29 @@
     </header>
     <main>
       <section>
-        <form data-js="login-form" class="login-form">
-          <fieldset class="login-fieldset">
-            <legend>Please Login to continue</legend>
-            <label for="login-username">Enter Username:</label>
-            <input id="login-username" type="text" required />
-            <label for="login-password">Enter Password</label>
-            <input id="login-password" type="password" required />
-            <button type="submit" name="login-button" class="login-button">
-              Submit
-            </button>
-            <a href="#">Reset password</a>
-            <a href="#">Create new account</a>
-          </fieldset>
+        <h2 id="login-header">Login</h2>
+        <form
+          aria-labelledby="login-header"
+          data-js="login-form"
+          class="login-form"
+        >
+          <p id="login-description">
+            Please login if you have an existing account
+          </p>
+          <label for="login-username">Enter Username:</label>
+          <input id="login-username" type="text" required />
+          <label for="login-password">Enter Password:</label>
+          <input id="login-password" type="password" required />
+          <button type="submit" name="login-button" class="login-button">
+            Submit
+          </button>
+          <a href="#">Reset password</a>
+          <a href="#">Create new account</a>
         </form>
       </section>
     </main>
+
+    <!-- navbar start -->
     <footer>
       <nav class="navbar">
         <a class="home" aria-label="go to Homepage" href="homepage.html"
@@ -37,6 +44,17 @@
             <path
               fill="currentColor"
               d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"
+            />
+          </svg>
+        </a>
+        <a
+          class="add"
+          aria-label="create a new question card"
+          href="addnew.html"
+          ><svg viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M20 14H14V20H10V14H4V10H10V4H14V10H20V14Z"
             />
           </svg>
         </a>
