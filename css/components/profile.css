@@ -1,18 +1,18 @@
 .profile__img {
   margin: 10px 0;
   width: 90%;
-  max-width: 500px;
+  max-width: 300px;
   align-self: center;
 }
 
 .profile__about-me-text {
   text-align: center;
-  font-size: 18px;
-  margin: 10px;
+  font-size: 1.2rem;
+  margin: 0.8rem;
 }
 
 .profile__settings > p {
-  padding: 10px 0px;
+  padding: 0.5rem 0;
 }
 
 .profile__logout {

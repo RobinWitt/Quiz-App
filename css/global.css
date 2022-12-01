@@ -16,6 +16,7 @@
   --color-navbar-inactive: #e6f1f9d9;
   --color-navbar-background: #80bfff;
   --navbar-shadow: 0px -5px 10px 0px;
+  --header-shadow: 0px 5px 10px 0px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,6 +29,7 @@
     --color-navbar-inactive: #807d7d;
     --color-navbar-background: #4f4c4c;
     --navbar-shadow: 0px -5px 10px 0px black;
+    --header-shadow: 0px 5px 10px 0px black;
   }
 }
 
@@ -41,11 +43,9 @@
     width: 700px;
     align-self: center;
   }
-  .navbar {
-    width: fit-content;
-  }
 }
 
+/* for dark/light mode switch
 :root.dark {
   --color-primary: #d2dfeb;
   --color-secondary: #9fb6cd;
@@ -55,22 +55,30 @@
   --color-navbar-inactive: #807d7d;
   --color-navbar-background: #4f4c4c;
   --navbar-shadow: 0px -5px 10px 0px black;
-}
+}*/
 
 body {
   background-color: var(--color-background);
   color: var(--color-primary);
   font-family: "Lucida Sans", sans-serif;
   font-size: 1.2em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 header {
-  margin: 0.25em;
+  width: 100%;
+  max-width: 700px;
+  padding: 5px;
+}
+
+h1 {
+  height: 3.5rem;
+  width: 100%;
   display: flex;
+  align-items: center;
   justify-content: center;
+  padding-top: 0.2rem;
+  background-color: var(--color-navbar-background);
+  box-shadow: var(--header-shadow);
 }
 
 main {
@@ -79,12 +87,6 @@ main {
   flex-direction: column;
   align-items: center;
   padding-bottom: 60px;
-}
-
-h1 {
-  border: 0.1em solid var(--color-primary);
-  border-radius: 5px;
-  padding: 0.8rem;
 }
 
 h2 {
@@ -108,8 +110,7 @@ section {
   margin: 0.2em 0;
   border-radius: 5px;
   width: 90%;
-  max-width: 700px;
+  max-width: 400px;
   height: fit-content;
-  border: 1px solid var(--color-secondary);
   box-shadow: 5px 5px 10px 1px black;
 }

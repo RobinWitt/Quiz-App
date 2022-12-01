@@ -4,6 +4,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  max-width: 700px;
   height: 60px;
   padding: 5px;
   display: flex;
@@ -14,12 +15,10 @@ footer {
 .navbar {
   height: 50px;
   width: 100%;
-  max-width: 700px;
   display: flex;
   justify-content: space-evenly;
   background-color: var(--color-navbar-background);
   box-shadow: var(--navbar-shadow);
-  border-radius: 5px;
 }
 
 .navbar > a {
