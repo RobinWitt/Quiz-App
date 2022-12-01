@@ -1,6 +1,7 @@
 .profile__img {
   margin: 10px 0;
   width: 90%;
+  max-width: 500px;
   align-self: center;
 }
 
