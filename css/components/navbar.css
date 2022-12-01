@@ -11,7 +11,7 @@ footer {
   align-items: center;
 }
 
-nav {
+.navbar {
   height: 50px;
   width: 100%;
   max-width: 700px;
@@ -22,7 +22,7 @@ nav {
   border-radius: 5px;
 }
 
-nav > a {
+.navbar > a {
   border: 2px solid var(--color-navbar-background);
   color: var(--color-primary);
   background-color: var(--color-navbar-inactive);
@@ -31,17 +31,17 @@ nav > a {
   justify-content: center;
 }
 
-.active-page {
-  background-color: var(--color-navbar-active);
-  border: none;
-}
-
-nav > a > svg {
+.navbar > a > svg {
   width: 50px;
   height: 50px;
   padding: 5px;
 }
 
-nav > a > svg:hover {
+.navbar > a > svg:hover {
   border: 2px solid transparent;
+}
+
+.navbar > .active-page {
+  background-color: var(--color-navbar-active);
+  border: none;
 }

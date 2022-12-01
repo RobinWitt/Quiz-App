@@ -6,29 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App - Home</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <script src="myscript.js" defer></script>
+    <script src="./jscript/addnew.js" defer></script>
   </head>
   <body>
     <header>
       <h1>Quiz App</h1>
     </header>
-    <main>
+    <main id="newCard__display" data-js="newCard__display">
       <section>
-        <h2 id="new-card__header">Create a new Card</h2>
+        <h2 id="new-card__header">Create a new card</h2>
         <form
-          aria-labelledby="new-card__header+"
+          aria-labelledby="new-card__header"
           data-js="new-card__form"
           class="new-card__form"
         >
-          <p id="new-card__description">Create a new question card</p>
           <label for="new-card__question">Enter Question:</label>
-          <input id="new-card__question" type="text" required />
-          <label for="new-card__answer">Enter Password:</label>
-          <input id="new-card__answer" type="text" required />
+          <textarea
+            id="new-card__question"
+            name="newCardQuestion"
+            required
+          ></textarea>
+          <label for="new-card__category">Enter categories:</label>
+          <input
+            id="new-card__category"
+            name="newCardCategory"
+            type="text"
+            required
+          />
+          <label for="new-card__answer">Enter answer:</label>
+          <textarea
+            id="new-card__question"
+            name="newCardAnswer"
+            required
+          ></textarea>
           <button
             data-js="new-card__button"
             type="submit"
-            name="new-card__button"
+            name="newCardButton"
             class="new-card__button"
           >
             Submit

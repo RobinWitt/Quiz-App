@@ -1,9 +1,6 @@
 /* Bookmark icon on question card */
 
 .bookmark {
-  position: absolute;
-  right: 10px;
-  top: 10px;
   border: none;
   background-color: transparent;
 }

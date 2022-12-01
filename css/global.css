@@ -41,13 +41,7 @@
     width: 700px;
     align-self: center;
   }
-
-  .question-card__main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.25em;
-  }
-  nav {
+  .navbar {
     width: fit-content;
   }
 }
@@ -111,7 +105,7 @@ section {
   align-items: center;
   background-color: var(--color-section);
   color: var(--color-secondary);
-  margin: 0.2em;
+  margin: 0.2em 0;
   border-radius: 5px;
   width: 90%;
   max-width: 700px;
