@@ -90,7 +90,7 @@ main {
 }
 
 h2 {
-  padding: 0.5em 0;
+  padding-top: 0.5rem;
   color: var(--color-primary);
   text-align: center;
 }
@@ -113,4 +113,33 @@ section {
   max-width: 400px;
   height: fit-content;
   box-shadow: 5px 5px 10px 1px black;
+}
+
+textarea,
+input {
+  width: 100%;
+  font-size: 1rem;
+  font-family: "Alata";
+  background-color: var(--color-navbar-inactive);
+  border-radius: 5px;
+}
+
+textarea:focus,
+input:focus {
+  outline: 2px solid var(--color-accent);
+}
+
+textarea {
+  resize: none;
+  height: 4rem;
+}
+
+input {
+  height: 1.7rem;
+  margin: 0;
+}
+
+label {
+  margin-top: 0.6rem;
+  margin-bottom: 0.1rem;
 }

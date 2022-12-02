@@ -15,7 +15,6 @@ document
           (textInput.item(index).getAttribute("maxlength") -
             textInput.item(index).value.length);
       } else {
-        console.log("empty");
         displayCharactersLeft.item(index).textContent = "";
       }
     };
