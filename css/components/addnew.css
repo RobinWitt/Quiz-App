@@ -10,3 +10,7 @@
 .new-card__form p {
   margin-bottom: 1rem;
 }
+
+.newCard__display textarea {
+  resize: none;
+}

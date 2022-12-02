@@ -30,6 +30,7 @@ createNewCardForm.addEventListener("submit", (event) => {
   // create new answer text
   const answer = document.querySelector('[data-js="question-card__answer"]');
   answer.textContent = newQuestionEntry.newCardAnswer;
+
   // make article visible
   questionCardArticle.style.display = "flex";
 

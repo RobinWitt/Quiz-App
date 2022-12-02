@@ -7,6 +7,7 @@
     <title>Quiz App - Home</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <script src="./jscript/addnew.js" defer></script>
+    <script src="./jscript/characterCount.js" defer></script>
   </head>
   <body>
     <header>
@@ -24,21 +25,29 @@
           <textarea
             id="new-card__question"
             name="newCardQuestion"
+            data-js="text-input"
+            maxlength="150"
             required
           ></textarea>
+          <p data-js="characters-left"></p>
           <label for="new-card__category">Enter categories:</label>
-          <input
+          <textarea
             id="new-card__category"
             name="newCardCategory"
-            type="text"
-            required
-          />
-          <label for="new-card__answer">Enter answer:</label>
-          <textarea
-            id="new-card__question"
-            name="newCardAnswer"
+            data-js="text-input"
+            maxlength="50"
             required
           ></textarea>
+          <p data-js="characters-left"></p>
+          <label for="new-card__answer">Enter answer:</label>
+          <textarea
+            id="new-card__answer"
+            name="newCardAnswer"
+            data-js="text-input"
+            maxlength="150"
+            required
+          ></textarea>
+          <p data-js="characters-left"></p>
           <button
             data-js="new-card__button"
             type="submit"
