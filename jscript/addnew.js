@@ -2,9 +2,6 @@
 
 const createNewCardForm = document.querySelector('[data-js="new-card__form"]');
 const newCardDisplay = document.querySelector('[data-js="newCard__display"]');
-const questionCardArticle = document.querySelector(
-  '[data-js="question-card__article"]'
-);
 
 createNewCardForm.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -73,6 +70,7 @@ createNewCardForm.addEventListener("submit", (event) => {
   newAnswerText.setAttribute("data-js", "question-card__answer");
   newAnswerText.textContent = newQuestionEntry.newCardAnswer;
   newArticle.append(newAnswerText);
+  /////////////////////////
   // clone article and make it visible
   /*
   const clone = questionCardArticle.cloneNode(true);

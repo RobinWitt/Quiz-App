@@ -11,6 +11,19 @@
   margin-bottom: 1rem;
 }
 
+.newCard__display textarea,
+input {
+  width: 100%;
+  font-size: 1rem;
+  font-family: "Alata";
+}
+
 .newCard__display textarea {
   resize: none;
+  height: 4rem;
+}
+
+.newCard__display input {
+  height: 1.5rem;
+  margin: 0;
 }

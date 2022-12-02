@@ -9,9 +9,14 @@ document
   .querySelectorAll('[data-js="text-input"]')
   .forEach((textarea, index) => {
     textarea.oninput = (event) => {
-      displayCharactersLeft.item(index).textContent =
-        "Characters left: " +
-        (textInput.item(index).getAttribute("maxlength") -
-          textInput.item(index).value.length);
+      if (textInput.item(index).value.length > 0) {
+        displayCharactersLeft.item(index).textContent =
+          "Characters left: " +
+          (textInput.item(index).getAttribute("maxlength") -
+            textInput.item(index).value.length);
+      } else {
+        console.log("empty");
+        displayCharactersLeft.item(index).textContent = "";
+      }
     };
   });

@@ -31,13 +31,13 @@
           ></textarea>
           <p data-js="characters-left"></p>
           <label for="new-card__category">Enter categories:</label>
-          <textarea
+          <input
             id="new-card__category"
             name="newCardCategory"
             data-js="text-input"
             maxlength="50"
             required
-          ></textarea>
+          />
           <p data-js="characters-left"></p>
           <label for="new-card__answer">Enter answer:</label>
           <textarea
@@ -49,12 +49,20 @@
           ></textarea>
           <p data-js="characters-left"></p>
           <button
-            data-js="new-card__button"
+            data-js="submit-form-button"
             type="submit"
-            name="newCardButton"
-            class="new-card__button"
+            name="submitFormButton"
+            class="formbutton"
           >
             Submit
+          </button>
+          <button
+            data-js="reset-form-button"
+            type="reset"
+            name="resetFormButton"
+            class="formButton"
+          >
+            Reset
           </button>
         </form>
       </section>
