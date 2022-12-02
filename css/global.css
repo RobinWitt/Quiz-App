@@ -100,6 +100,10 @@ h3 {
   margin: 0.25em 0;
 }
 
+p {
+  text-align: center;
+}
+
 section {
   position: relative;
   display: flex;
@@ -107,12 +111,19 @@ section {
   align-items: center;
   background-color: var(--color-section);
   color: var(--color-secondary);
-  margin: 0.2em 0;
+  margin: 0.25rem 0;
+  padding-bottom: 0.5rem;
   border-radius: 5px;
   width: 90%;
   max-width: 400px;
   height: fit-content;
   box-shadow: 5px 5px 10px 1px black;
+}
+
+form {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
 }
 
 textarea,
@@ -140,6 +151,11 @@ input {
 }
 
 label {
-  margin-top: 0.6rem;
-  margin-bottom: 0.1rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+
+a {
+  text-align: center;
+  color: var(--color-accent);
 }

@@ -3,21 +3,12 @@
   width: 90%;
   max-width: 300px;
   align-self: center;
+  border: 3px dashed;
+  border-radius: 20%;
 }
 
 .profile__about-me-text {
   text-align: center;
   font-size: 1.2rem;
   margin: 0.8rem;
-}
-
-.profile__settings > p {
-  padding: 0.5rem 0;
-}
-
-.profile__logout {
-  padding: 10px 0;
-  color: var(--color-accent);
-  text-align: center;
-  text-decoration: underline solid 2px var(--color-accent);
 }

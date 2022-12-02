@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App - Home</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <script src="./jscript/index.js" defer></script>
+    <script src="./jscript/index.js" type="module" defer></script>
   </head>
   <body>
     <header>
@@ -20,18 +20,68 @@
           data-js="login-form"
           class="login-form"
         >
-          <p id="login-description">
-            Please login if you have an existing account
-          </p>
+          <p id="login-description">Login if you have an existing account</p>
           <label for="login-username">Enter Username:</label>
-          <input id="login-username" type="text" required />
+          <input id="login-username" name="username" type="text" required />
           <label for="login-password">Enter Password:</label>
-          <input id="login-password" type="password" required />
-          <button type="submit" name="login-button" class="login-button">
-            Login
-          </button>
-          <a href="#">Reset password</a>
-          <a href="#">Create new account</a>
+          <input id="login-password" name="password" type="password" required />
+          <div class="form-button-area">
+            <button
+              type="submit"
+              name="login-button"
+              class="form-button"
+              data-js="login-button"
+            >
+              Login
+            </button>
+          </div>
+          <div class="form-button-area">
+            <button
+              type="button"
+              name="create-account-button"
+              class="form-button"
+              data-js="create-account-button"
+            >
+              Create new account
+            </button>
+            <button
+              type="button"
+              name="reset-password-button"
+              class="form-button"
+              data-js="reset-password-button"
+            >
+              Reset Password
+            </button>
+          </div>
+          <p class="reset-notify" data-js="reset-notify">
+            We sent you an email
+          </p>
+          <label
+            for="create-account-email"
+            class="create-account-email"
+            data-js="create-account-email"
+            >Enter Email:</label
+          >
+          <input
+            id="create-account-email"
+            name="email"
+            class="create-account-email"
+            data-js="create-account-email"
+            type="email"
+          />
+          <div
+            class="form-button-area create-account-email"
+            data-js="create-account-email"
+          >
+            <button
+              type="button"
+              name="submit-create-account-button"
+              class="form-button"
+              data-js="create-account-button"
+            >
+              Submit
+            </button>
+          </div>
         </form>
       </section>
     </main>

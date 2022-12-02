@@ -1,24 +1,27 @@
 /* create new question card */
 
-.new-card__form {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1rem;
-}
-
 .new-card__form > p {
   text-align: right;
 }
 
 .form-button-area {
   display: flex;
+  justify-content: center;
   gap: 5px;
   margin-top: 0.8rem;
+  margin-bottom: 0.25rem;
 }
 
 .form-button {
-  width: 50%;
+  width: 100%;
   height: 1.5rem;
   font-size: 1rem;
+}
+
+.create-account-email {
+  display: none;
+}
+
+.reset-notify {
+  display: none;
 }
