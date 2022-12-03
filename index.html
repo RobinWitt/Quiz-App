@@ -13,14 +13,14 @@
       <h1>Quiz App</h1>
     </header>
     <main>
-      <section>
+      <section class="login-section" data-js="login-section">
         <h2 id="login-header">Login</h2>
         <form
           aria-labelledby="login-header"
-          data-js="login-form"
           class="login-form"
+          data-js="login-form"
         >
-          <p id="login-description">Login if you have an existing account</p>
+          <p id="login-description">with existing account</p>
           <label for="login-username">Enter Username:</label>
           <input id="login-username" name="username" type="text" required />
           <label for="login-password">Enter Password:</label>
@@ -38,14 +38,6 @@
           <div class="form-button-area">
             <button
               type="button"
-              name="create-account-button"
-              class="form-button"
-              data-js="create-account-button"
-            >
-              Create new account
-            </button>
-            <button
-              type="button"
               name="reset-password-button"
               class="form-button"
               data-js="reset-password-button"
@@ -56,26 +48,26 @@
           <p class="reset-notify" data-js="reset-notify">
             We sent you an email
           </p>
-          <label
-            for="create-account-email"
-            class="create-account-email"
-            data-js="create-account-email"
-            >Enter Email:</label
-          >
-          <input
-            id="create-account-email"
-            name="email"
-            class="create-account-email"
-            data-js="create-account-email"
-            type="email"
-          />
-          <div
-            class="form-button-area create-account-email"
-            data-js="create-account-email"
-          >
+        </form>
+      </section>
+      <section class="create-account-section" data-js="create-account-section">
+        <h2 id="create-new-header">Create new Account</h2>
+        <form
+          aria-labelledby="create-new-header"
+          class="create-account-form"
+          data-js="create-account-form"
+        >
+          <p id="create-description"></p>
+          <label for="new-email">Enter Email:</label>
+          <input id="new-email" name="email" type="email" required />
+          <label for="new-username">Enter Username:</label>
+          <input id="new-username" name="username" type="text" required />
+          <label for="new-password">Enter Password:</label>
+          <input id="new-password" name="password" type="password" required />
+          <div class="form-button-area">
             <button
-              type="button"
-              name="submit-create-account-button"
+              type="submit"
+              name="create-account-button"
               class="form-button"
               data-js="create-account-button"
             >
@@ -85,8 +77,10 @@
         </form>
       </section>
     </main>
-
+    <button data-js="switch">Switch</button>
+    <a href="./homepage.html">Home</a>
     <!-- navbar start -->
+    <!--
     <footer>
       <nav class="navbar">
         <a class="home" aria-label="go to Homepage" href="homepage.html"
@@ -129,5 +123,5 @@
         </a>
       </nav>
     </footer>
-  </body>
+  --></body>
 </html>
