@@ -1,7 +1,7 @@
 // create a new question card
 
 const createNewCardForm = document.querySelector('[data-js="new-card__form"]');
-const newCardDisplay = document.querySelector('[data-js="newCard__display"]');
+const newCardDisplay = document.querySelector('[data-js="page-homepage"]');
 
 createNewCardForm.addEventListener("submit", (event) => {
   event.preventDefault();
