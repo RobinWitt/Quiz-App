@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <script src="./jscript/bookmarking.js" defer></script>
     <script src="./jscript/answerToggle.js" defer></script>
+    <script src="./jscript/addnew.js" defer></script>
+    <script src="./jscript/characterCount.js" defer></script>
+    <script src="./jscript/settings.js" defer></script>
   </head>
   <body>
     <header>
       <h1>Quiz App</h1>
     </header>
-    <main class="question-card__main">
+    <main class="question-card__main" data-js="newCard__display">
       <!-- Question Card -->
       <article class="question-card">
         <nav class="question-card__header">
@@ -52,7 +55,6 @@
           html stands for Hyper Text Markup Language
         </p>
       </article>
-
       <!-- Question Card -->
       <article class="question-card">
         <nav class="question-card__header">
@@ -91,6 +93,98 @@
           css means Cascading Style Sheets
         </p>
       </article>
+      <!-- Bookmarks -->
+      <section>
+        <h2>Bookmarks</h2>
+      </section>
+      <!-- Create a new question card -->
+      <section>
+        <h2 id="new-card__header">Add new Question</h2>
+        <form
+          aria-labelledby="new-card__header"
+          data-js="new-card__form"
+          class="new-card__form"
+        >
+          <label for="new-card__question">Enter Question:</label>
+          <textarea
+            id="new-card__question"
+            name="newCardQuestion"
+            data-js="text-input"
+            maxlength="150"
+            required
+          ></textarea>
+          <p data-js="characters-left"></p>
+          <label for="new-card__category">Enter categories:</label>
+          <input
+            id="new-card__category"
+            name="newCardCategory"
+            data-js="text-input"
+            maxlength="50"
+            required
+          />
+          <p data-js="characters-left"></p>
+          <label for="new-card__answer">Enter answer:</label>
+          <textarea
+            id="new-card__answer"
+            name="newCardAnswer"
+            data-js="text-input"
+            maxlength="150"
+            required
+          ></textarea>
+          <p data-js="characters-left"></p>
+          <div class="form-button-area">
+            <button
+              data-js="submit-form-button"
+              type="submit"
+              name="submitFormButton"
+              class="form-button"
+            >
+              Submit
+            </button>
+            <button
+              data-js="reset-form-button"
+              type="reset"
+              name="resetFormButton"
+              class="form-button"
+            >
+              Reset
+            </button>
+          </div>
+        </form>
+      </section>
+      <!-- Profile & Settings -->
+      <section>
+        <h2>Profile</h2>
+        <h3 class="username">Jane Doe</h3>
+        <img
+          class="profile__img"
+          src="assets/leaves-7552915_1280.webp"
+          alt="profile-picture"
+        />
+        <h3 class="about-me">About me</h3>
+        <p class="profile__about-me-text">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet.
+        </p>
+        <p class="profile__counter-questions">Answered questions:</p>
+        <p class="profile__counter-bookmarks">Active bookmarks:</p>
+      </section>
+      <section class="profile__settings">
+        <h2>Settings</h2>
+        <p>Switch to Dark Mode</p>
+        <label class="settings__switch">
+          <input type="checkbox" data-js="darkModeSwitch" />
+          <span class="settings__slider"></span>
+        </label>
+        <p>Change Password</p>
+        <p>Version: 0.5</p>
+      </section>
+      <section>
+        <a class="profile__logout" href="index.html">Logout</a>
+      </section>
     </main>
 
     <!-- navbar start -->
