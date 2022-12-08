@@ -39,7 +39,7 @@ footer {
 .navbar > a > svg:hover {
   border: 2px solid transparent;
 }
-
+/* change this */
 .navbar > .active-page {
   background-color: var(--color-navbar-active);
   border: none;

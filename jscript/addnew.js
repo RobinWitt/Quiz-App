@@ -70,14 +70,6 @@ createNewCardForm.addEventListener("submit", (event) => {
   newAnswerText.setAttribute("data-js", "question-card__answer");
   newAnswerText.textContent = newQuestionEntry.newCardAnswer;
   newArticle.append(newAnswerText);
-  /////////////////////////
-  // clone article and make it visible
-  /*
-  const clone = questionCardArticle.cloneNode(true);
-  newCardDisplay.append(clone);
-  clone.style.display = "flex";
-  console.log(clone);
-  */
 
   //event.target.reset();
 });

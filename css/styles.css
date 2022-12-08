@@ -19,9 +19,8 @@
 
 .page {
   display: none;
-  padding: 3rem;
 }
 
 .page.current {
-  display: block;
+  display: flex;
 }
