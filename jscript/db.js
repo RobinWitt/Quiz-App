@@ -20,5 +20,3 @@ export const questionAPI = [
     answer: "One year consists of 12 months",
   },
 ];
-
-console.log(questionAPI);
