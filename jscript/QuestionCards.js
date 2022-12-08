@@ -1,19 +1,18 @@
 // create question cards
 import { questionAPI } from "./db.js";
 
-const newCardDisplay = document.querySelector('[data-js="page-homepage"]');
+const pageHomepage = document.querySelector('[data-js="page-homepage"]');
 
 const questionData = [...questionAPI];
-questionData.forEach((questionCard) => {
+questionData.forEach((questionCard, index) => {
+  const questionNumber = index + 1;
   const question = questionCard.question;
   const answer = questionCard.answer;
-  const categories = questionCard.categories;
-  const [a, b, c, d] = categories;
 
   // create new question card
   const newArticle = document.createElement("article");
   newArticle.classList.add("question-card");
-  newCardDisplay.append(newArticle);
+  pageHomepage.append(newArticle);
   // create new question card header
   const newHeader = document.createElement("nav");
   newHeader.classList.add("question-card__header");
@@ -21,17 +20,22 @@ questionData.forEach((questionCard) => {
   // create card number
   const newCardNumber = document.createElement("h2");
   newCardNumber.classList.add("question-card__number");
-  newCardNumber.textContent = "13";
+  newCardNumber.textContent = questionNumber;
   newHeader.append(newCardNumber);
   // create new category list
   const newCardCategoryList = document.createElement("ul");
   newCardCategoryList.classList.add("question-card__categories");
   newHeader.append(newCardCategoryList);
+
   // create new category tag
-  const newCardCategoryTag = document.createElement("li");
-  newCardCategoryTag.classList.add("question-card__categories-tags");
-  (newCardCategoryTag.textContent = a), b, c, d;
-  newCardCategoryList.append(newCardCategoryTag);
+  const categories = questionCard.categories;
+  categories.forEach((category) => {
+    const newCardCategoryTag = document.createElement("li");
+    newCardCategoryTag.classList.add("question-card__categories-tags");
+    newCardCategoryTag.textContent = category;
+    newCardCategoryList.append(newCardCategoryTag);
+  });
+
   // create new bookmark icon
   const newBookmarkButton = document.createElement("button");
   newBookmarkButton.classList.add("bookmark");

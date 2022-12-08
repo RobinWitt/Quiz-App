@@ -9,7 +9,7 @@
     <script src="./jscript/srcipt.js" type="module" defer></script>
     <script src="./jscript/bookmarking.js" type="module" defer></script>
     <script src="./jscript/answerToggle.js" type="module" defer></script>
-    <script src="./jscript/addnew.js" type="module" defer></script>
+    <script src="./jscript/NewCardInput.js" type="module" defer></script>
     <script src="./jscript/characterCount.js" type="module" defer></script>
     <script src="./jscript/settings.js" type="module" defer></script>
     <script src="./jscript/db.js" type="module" defer></script>
@@ -20,13 +20,13 @@
       <h1>Quiz App</h1>
     </header>
     <main>
-      <section class="page current" data-js="page-homepage"></section>
+      <section class="page" data-js="page-homepage"></section>
       <!-- Bookmarks -->
       <section class="page" data-js="page-bookmarks">
         <h2>Bookmarks</h2>
       </section>
       <!-- Create a new question card -->
-      <section class="page" data-js="page-add-new">
+      <section class="page current" data-js="page-add-new">
         <h2 id="new-card__header">Add new Question</h2>
         <form
           aria-labelledby="new-card__header"
@@ -36,7 +36,7 @@
           <label for="new-card__question">Enter Question:</label>
           <textarea
             id="new-card__question"
-            name="newCardQuestion"
+            name="newQuestion"
             data-js="text-input"
             maxlength="150"
             required
@@ -45,7 +45,7 @@
           <label for="new-card__category">Enter categories:</label>
           <input
             id="new-card__category"
-            name="newCardCategory"
+            name="newCategory"
             data-js="text-input"
             maxlength="50"
             required
@@ -54,7 +54,7 @@
           <label for="new-card__answer">Enter answer:</label>
           <textarea
             id="new-card__answer"
-            name="newCardAnswer"
+            name="newAnswer"
             data-js="text-input"
             maxlength="150"
             required
