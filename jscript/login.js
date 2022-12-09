@@ -8,30 +8,27 @@ loginForm.addEventListener("submit", (event) => {
   const loginPassword = event.target.elements.password.value;
   console.log(loginUserName, loginPassword);
 
-  // event.target.reset();
-  // event.target.username.focus();
+  event.target.reset();
+  event.target.username.focus();
 });
 
-// create new account toggle
+// get create new account form data
+const createAccountForm = document.querySelector(
+  '[data-js="create-account-form"]'
+);
 
-const switchButton = document.querySelector('[data-js="switch"]');
+createAccountForm.addEventListener("submit", (event) => {
+  event.preventDefault();
 
-switchButton.addEventListener("click", () => {
-  const loginSection = document.querySelector('[data-js="login-section"]');
-  const createAccountSection = document.querySelector(
-    '[data-js="create-account-section"]'
-  );
-  if (loginSection.style.top === "-500px") {
-    loginSection.style.top = "70px";
-    createAccountSection.style.top = "-500px";
-  } else {
-    loginSection.style.top = "-500px";
-    createAccountSection.style.top = "70px";
-  }
+  const newformData = new FormData(event.target);
+  const data = Object.fromEntries(newformData);
+  console.log(data);
+
+  event.target.reset();
+  event.target.email.focus();
 });
 
 // reset password notification
-
 const resetPasswordButton = document.querySelector(
   '[data-js="reset-password-button"]'
 );

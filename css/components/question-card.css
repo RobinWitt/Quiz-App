@@ -9,8 +9,7 @@
   color: var(--color-secondary);
   margin: 0.4em 0;
   border-radius: 5px;
-  width: 90%;
-  max-width: 400px;
+  width: 100%;
   border: 1px solid var(--color-secondary);
   height: fit-content;
   box-shadow: 5px 5px 10px 1px black;

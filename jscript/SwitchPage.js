@@ -19,27 +19,43 @@ const allPages = document.querySelectorAll('[data-js*="page"]');
 linkHomepage.addEventListener("click", () => {
   allPages.forEach((page) => {
     page.classList.remove("current");
+    linkAddNew.classList.remove("active");
+    linkBookmarks.classList.remove("active");
+    linkProfileSettings.classList.remove("active");
   });
   pageHomepage.classList.add("current");
+  linkHomepage.classList.add("active");
 });
 
 linkBookmarks.addEventListener("click", () => {
   allPages.forEach((page) => {
     page.classList.remove("current");
+    linkAddNew.classList.remove("active");
+    linkHomepage.classList.remove("active");
+    linkProfileSettings.classList.remove("active");
   });
   pageBookmarks.classList.add("current");
+  linkBookmarks.classList.add("active");
 });
 
 linkAddNew.addEventListener("click", () => {
   allPages.forEach((page) => {
     page.classList.remove("current");
+    linkHomepage.classList.remove("active");
+    linkBookmarks.classList.remove("active");
+    linkProfileSettings.classList.remove("active");
   });
   pageAddNew.classList.add("current");
+  linkAddNew.classList.add("active");
 });
 
 linkProfileSettings.addEventListener("click", () => {
   allPages.forEach((page) => {
     page.classList.remove("current");
+    linkAddNew.classList.remove("active");
+    linkBookmarks.classList.remove("active");
+    linkHomepage.classList.remove("active");
   });
   pageProfileSettings.classList.add("current");
+  linkProfileSettings.classList.add("active");
 });

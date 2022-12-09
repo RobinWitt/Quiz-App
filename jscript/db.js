@@ -21,4 +21,9 @@ export const questionAPI = [
     categories: ["time", "calendar"],
     answer: "One year consists of 12 months",
   },
+  {
+    question: "What are the names of Harry Potter's best friends?",
+    categories: ["trivia", "harrypotter", "hogwarts"],
+    answer: "Hermine Granger and Ronald Weasley",
+  },
 ];

@@ -40,7 +40,7 @@ footer {
   border: 2px solid transparent;
 }
 /* change this */
-.navbar > .active-page {
+.navbar > .active {
   background-color: var(--color-navbar-active);
   border: none;
 }
