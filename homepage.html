@@ -19,68 +19,103 @@
       <h1>Quiz App</h1>
     </header>
     <main>
-      <div class="page current" data-js="page-homepage"></div>
+      <container class="page current" data-js="page-homepage"></container>
       <!-- Bookmarks -->
-      <section class="page" data-js="page-bookmarks">
-        <h2>Bookmarks</h2>
-      </section>
+      <container class="page" data-js="page-bookmarks">
+        <section>
+          <h2>Bookmarks</h2>
+        </section>
+      </container>
       <!-- Create a new question card -->
-      <section class="page" data-js="page-add-new">
-        <h2 id="new-card__header">Add new Question</h2>
-        <form
-          aria-labelledby="new-card__header"
-          data-js="new-card__form"
-          class="new-card__form"
-        >
-          <label for="new-card__question">Enter Question:</label>
-          <textarea
-            id="new-card__question"
-            name="newQuestion"
-            data-js="text-input"
-            maxlength="150"
-            required
-          ></textarea>
-          <p data-js="characters-left"></p>
-          <label for="new-card__category">Enter categories:</label>
-          <input
-            id="new-card__category"
-            name="newCategory"
-            data-js="text-input"
-            maxlength="50"
-            required
-          />
-          <p data-js="characters-left"></p>
-          <label for="new-card__answer">Enter answer:</label>
-          <textarea
-            id="new-card__answer"
-            name="newAnswer"
-            data-js="text-input"
-            maxlength="150"
-            required
-          ></textarea>
-          <p data-js="characters-left"></p>
-          <div class="form-button-area">
-            <button
-              data-js="submit-form-button"
-              type="submit"
-              name="submitFormButton"
-              class="form-button"
-            >
-              Submit
-            </button>
-            <button
-              data-js="reset-form-button"
-              type="reset"
-              name="resetFormButton"
-              class="form-button"
-            >
-              Reset
-            </button>
-          </div>
-        </form>
-      </section>
+      <container class="page current" data-js="page-add-new">
+        <section>
+          <h2 id="new-card__header">Add new Question</h2>
+          <form
+            aria-labelledby="new-card__header"
+            data-js="new-card__form"
+            class="new-card__form"
+          >
+            <label for="new-card__question">Enter Question:</label>
+            <textarea
+              id="new-card__question"
+              name="newQuestion"
+              data-js="text-input"
+              maxlength="150"
+              required
+            ></textarea>
+            <p data-js="characters-left"></p>
+            <label for="new-card__category">Enter categories:</label>
+            <div class="new-card__category-area">
+              <input
+                id="new-card__category"
+                name="newCategory"
+                data-js="text-input"
+                maxlength="10"
+                required
+              />
+              <p data-js="characters-left"></p>
+              <button type="button" data-js="add-category">+</button>
+              <input
+                id="new-card__category"
+                name="newCategory"
+                data-js="text-input"
+                maxlength="10"
+              />
+              <p data-js="characters-left"></p>
+              <input
+                id="new-card__category"
+                name="newCategory"
+                data-js="text-input"
+                maxlength="10"
+              />
+              <p data-js="characters-left"></p>
+              <input
+                id="new-card__category"
+                name="newCategory"
+                data-js="text-input"
+                maxlength="10"
+              />
+              <p data-js="characters-left"></p>
+              <input
+                id="new-card__category"
+                name="newCategory"
+                data-js="text-input"
+                maxlength="10"
+              />
+              <p data-js="characters-left"></p>
+            </div>
+            <label for="new-card__answer">Enter answer:</label>
+            <textarea
+              id="new-card__answer"
+              name="newAnswer"
+              data-js="text-input"
+              maxlength="150"
+              required
+            ></textarea>
+            <p data-js="characters-left"></p>
+            <div class="form-button-area">
+              <button
+                data-js="submit-form-button"
+                type="submit"
+                name="submitFormButton"
+                class="form-button"
+              >
+                Submit
+              </button>
+              <button
+                data-js="reset-form-button"
+                type="reset"
+                name="resetFormButton"
+                class="form-button"
+              >
+                Reset
+              </button>
+            </div>
+          </form>
+        </section>
+      </container>
       <!-- Profile & Settings -->
-      <div class="page" data-js="page-profile-settings">
+      <container class="page" data-js="page-profile-settings">
         <section>
           <h2>Profile</h2>
           <h3 class="username">Jane Doe</h3>
@@ -113,7 +148,7 @@
         <section>
           <a class="profile__logout" href="index.html">Logout</a>
         </section>
-      </div>
+      </container>
     </main>
 
     <!-- navbar start -->

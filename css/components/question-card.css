@@ -46,6 +46,10 @@
   font-size: 16px;
 }
 
+.question-card__questionTitle {
+  padding: 0 0.5rem;
+}
+
 .question-card__button-show-answer {
   margin: 0.7rem;
   padding: 0.25rem;
@@ -62,4 +66,9 @@
   font-style: italic;
   font-size: 1rem;
   text-align: center;
+  display: none;
+}
+
+.showAnswer {
+  display: block;
 }

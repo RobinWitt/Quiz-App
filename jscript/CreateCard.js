@@ -2,7 +2,7 @@
 
 export function CreateCard(
   questionNumber,
-  question,
+  questionTitle,
   categories,
   answer,
   isBookmarked,
@@ -56,14 +56,16 @@ export function CreateCard(
     "M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
   );
   newSVGPath.classList.add("bookmark__path");
+  // bookmarked??
   if (isBookmarked) {
     newSVGPath.classList.add("bookmarked");
   }
   newSVG.append(newSVGPath);
   // create new question title
-  const newQuestion = document.createElement("h3");
-  newQuestion.textContent = question;
-  newArticle.append(newQuestion);
+  const newQuestionTitle = document.createElement("h3");
+  newQuestionTitle.classList.add("question-card__questionTitle");
+  newQuestionTitle.textContent = questionTitle;
+  newArticle.append(newQuestionTitle);
   // create new show answer button
   const newAnswerButton = document.createElement("button");
   newAnswerButton.classList.add("question-card__button-show-answer");

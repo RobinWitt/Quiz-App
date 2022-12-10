@@ -4,12 +4,18 @@
   text-align: right;
 }
 
+.new-card__category-area {
+  display: grid;
+  grid-template-columns: 90% 10%;
+}
+
 .form-button-area {
   display: flex;
   justify-content: center;
   gap: 5px;
   margin-top: 0.8rem;
   margin-bottom: 0.25rem;
+  width: 100%;
 }
 
 .form-button {
