@@ -1,8 +1,9 @@
 // toggle bookmarks
 
-const bookmark = document.querySelectorAll('[data-js="bookmark__svg-path"]');
+import { questionAPI } from "./db.js";
 
-document
+/*
+  document
   .querySelectorAll('[data-js="toggle-bookmark"]')
   .forEach((button, index) => {
     button.onclick = (event) => {
@@ -13,3 +14,4 @@ document
       }
     };
   });
+*/

@@ -12,15 +12,14 @@
     <script src="./jscript/NewCardInput.js" type="module" defer></script>
     <script src="./jscript/characterCount.js" type="module" defer></script>
     <script src="./jscript/settings.js" type="module" defer></script>
-    <script src="./jscript/db.js" type="module" defer></script>
-    <script src="./jscript/QuestionCards.js" type="module" defer></script>
+    <script src="./jscript/CreateCardFromDB.js" type="module" defer></script>
   </head>
   <body>
     <header>
       <h1>Quiz App</h1>
     </header>
     <main>
-      <section class="page current" data-js="page-homepage"></section>
+      <div class="page current" data-js="page-homepage"></div>
       <!-- Bookmarks -->
       <section class="page" data-js="page-bookmarks">
         <h2>Bookmarks</h2>
@@ -81,7 +80,7 @@
         </form>
       </section>
       <!-- Profile & Settings -->
-      <section class="page" data-js="page-profile-settings">
+      <div class="page" data-js="page-profile-settings">
         <section>
           <h2>Profile</h2>
           <h3 class="username">Jane Doe</h3>
@@ -114,7 +113,7 @@
         <section>
           <a class="profile__logout" href="index.html">Logout</a>
         </section>
-      </section>
+      </div>
     </main>
 
     <!-- navbar start -->

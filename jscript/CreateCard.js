@@ -1,18 +1,17 @@
-// create question cards
-import { questionAPI } from "./db.js";
+// Creating Cards
 
-const pageHomepage = document.querySelector('[data-js="page-homepage"]');
-
-const questionData = [...questionAPI];
-questionData.forEach((questionCard, index) => {
-  const questionNumber = index + 1;
-  const question = questionCard.question;
-  const answer = questionCard.answer;
-
+export function CreateCard(
+  questionNumber,
+  question,
+  categories,
+  answer,
+  isBookmarked,
+  destination
+) {
   // create new question card
   const newArticle = document.createElement("article");
   newArticle.classList.add("question-card");
-  pageHomepage.append(newArticle);
+  destination.append(newArticle);
   // create new question card header
   const newHeader = document.createElement("nav");
   newHeader.classList.add("question-card__header");
@@ -26,17 +25,15 @@ questionData.forEach((questionCard, index) => {
   const newCardCategoryList = document.createElement("ul");
   newCardCategoryList.classList.add("question-card__categories");
   newHeader.append(newCardCategoryList);
-
   // create new category tag
-  const categories = questionCard.categories;
+
   categories.forEach((category) => {
     const newCardCategoryTag = document.createElement("li");
     newCardCategoryTag.classList.add("question-card__categories-tags");
     newCardCategoryTag.textContent = category;
     newCardCategoryList.append(newCardCategoryTag);
   });
-
-  // create new bookmark icon
+  // create new bookmark button/icon
   const newBookmarkButton = document.createElement("button");
   newBookmarkButton.classList.add("bookmark");
   newBookmarkButton.setAttribute("aria-label", "click to bookmark");
@@ -53,12 +50,15 @@ questionData.forEach((questionCard, index) => {
     "path"
   );
   newSVGPath.setAttribute("data-js", "bookmark__svg-path");
-  newSVGPath.setAttribute("fill", "transparent");
   newSVGPath.setAttribute("stroke", "var(--color-accent");
   newSVGPath.setAttribute(
     "d",
     "M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
   );
+  newSVGPath.classList.add("bookmark__path");
+  if (isBookmarked) {
+    newSVGPath.classList.add("bookmarked");
+  }
   newSVG.append(newSVGPath);
   // create new question title
   const newQuestion = document.createElement("h3");
@@ -76,4 +76,4 @@ questionData.forEach((questionCard, index) => {
   newAnswerText.setAttribute("data-js", "question-card__answer");
   newAnswerText.textContent = answer;
   newArticle.append(newAnswerText);
-});
+}

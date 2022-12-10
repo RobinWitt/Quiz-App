@@ -9,3 +9,11 @@
   width: 1.8rem;
   color: var(--color-accent);
 }
+
+.bookmark__path {
+  fill: transparent;
+}
+
+.bookmarked {
+  fill: currentColor;
+}
